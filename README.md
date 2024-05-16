@@ -15,7 +15,7 @@
     git clone https://github.com/vhkristof/dsmr-relay.git
     cd dsmr-relay
     docker build -t dsmr-relay .
-    docker run -p 8000:8000 -d -v ./dsmr-relay.py:/app/dsmr-relay.py --name dsmr-relay --restart always dsmr-relay
+    docker run -p 8000:8000 -d -v $(pwd)/dsmr-relay.py:/app/dsmr-relay.py --name dsmr-relay --restart always dsmr-relay
 
 
 ## Provide data via DSMR-reader
