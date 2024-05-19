@@ -7,7 +7,8 @@ telegram = None
 telegram_timestamp = None
 
 @app.route('/api/v1/datalogger/dsmrreading', methods=['POST', 'GET'])
-def index():
+@app.route('/telegram', methods=['GET'])
+def dsmr():
     global telegram
     global telegram_timestamp
 
